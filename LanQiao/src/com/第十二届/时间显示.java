@@ -14,6 +14,7 @@ import java.util.Scanner;
 public class 时间显示 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        //减去当前东八区+8h的毫秒数，因为求出时间后会自动转换为当前时区时间，导致结果＋8h
         long hm = sc.nextLong()-28800000;
         //获取到从标准时间hm毫秒后的时间对象
         Date date = new Date(hm);

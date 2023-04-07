@@ -20,6 +20,7 @@ public class 货物摆放 {
                 ls.add(i);
 //                System.out.println(i);
                 //n%i==0，i可以被n整除，那么n/i也可以被n整除
+                //16%4 == 0 而且另一个因数也为4，只加入4；16%8=0，另一个因数为2，加入2和8
                 if(i!=n/i) {
                     ls.add(n/i);
 //                    System.out.println(n/i);

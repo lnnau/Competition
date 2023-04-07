@@ -12,8 +12,12 @@ public class GetFactor {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         long num = sc.nextLong();
+        System.out.println(System.currentTimeMillis());
+
         System.out.println("优化代码："+factor2(num));
+        System.out.println(System.currentTimeMillis());
         System.out.println("基础代码："+factor1(num));
+        System.out.println(System.currentTimeMillis());
 
     }
     //求因数个数基础代码
